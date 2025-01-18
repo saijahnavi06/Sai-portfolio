@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=>device-width>, initial-scale=1.0">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+        <section id="hamburger-nav">
+            <nav>
+            <div class="logo"><u>Sai Portfolio</u></div>
+                <ul id="menuList">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Education.html">Education</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                </div>
+            </nav>
+
+
+            <script>
+                let menulist = document.getElementById("menuList")
+                menuList.style.maxHeight = "0px";
+
+                function toggleMenu(){
+                    if(menuList.style.maxHeight == "0px")
+                    {
+                      menuList.style.maxHeight = "300px";
+                    }
+                    else{
+                        menuList.style.maxHeight="0px";
+                    }
+                }
+                  
+              </script>
+            <script scr="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+        </section>
+    </div>
+
+    <section class="home">
+        <div class="home-info">
+        <h3>Hello, It's Me</h3>
+        <h1>Pirla Venkata Sai Jahnavi</h1>
+        <h2>I'm a 
+            <span style="--i:4;"data-text="Python Developer">Python Developer</span>
+            <span style="--i:3;"data-text="Editor">Editor</span>
+            <span style="--i:2;"data-text="Writer">Writer</span>
+            <span style="--i:1;"data-text="Learner">Learner</span>
+        </h2>
+        <p> Venkata sai jahnavi Pirla, I am completed B.tech in Computer Science and Engineering  I possess skills in Python, basic SQL, and HTML, which allow me to work on various aspects of software development, database management, and web development</p>
+        <div class="btn-sci">
+            <a href="About.html" class="btn">Read More</a>
+        <div class="sci">
+            <a
+                href="https://www.linkedin.com/in/venkata-sai-jahnavi-pirla-708228277/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+
+            <a href="https://github.com/saijahnavi06/saijahnavi06/"><i
+                    class="fa-brands fa-github"></i></a>
+            <a
+                href="https://www.instagram.com/sai_janu_yadav0609?igsh=MW54Mzl1ZDl6eW40ag==/"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a
+                href="https://www.facebook.com/share/1BaTc8HwGF/"><i
+                    class="fa-brands fa-facebook"></i></a>
+        </div>
+        </div>
+        </div>
+
+        <div class="home-img">
+             <div class="img-box">
+                 <div class="img-item">
+                    <img src="jahnu photo.png">
+                 </div>
+             </div>
+        </div>
+        </section>
+    </body>
+</html>
+
+<style>
+    .home{
+        display: flex;
+        align-items: center;
+        height: 100hv;
+        padding: 60px 9% 0;
+        color: orangered;
+    }
+
+    .home-info h1{
+        font-size: 35px;
+
+    }
+
+    .home-info h2{
+        font-size: 22px;
+        margin-top: -10px;
+    }
+
+    .home-info h2 span{
+        position: relative;
+        display: inline-block;
+        color: transparent;
+        -webkit-text-stroke: .7px orangered;
+        animation: display-text 16s linear infinite;
+        animation-delay: calc(-4s * var(--i));
+    }
+
+    @keyframes display-text {
+
+        25%,
+        100%{
+            display: none;
+        }
+        
+    }
+
+
+    .home-info h2 span::before {
+        content: attr(data-text);
+        position: absolute;
+        width: 0;
+        border-right: 2px solid orangered;
+        color:orangered;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: fill-text 4s linear infinite;
+    }
+
+@keyframes fill-text {
+    10%,
+    100%{
+        width: 0;
+    }
+        70%,
+        90%{
+            width: 100%;
+        
+    }
+}
+
+
+    .home-info p{
+
+        font-size: 16px;
+        margin: 10px 0 25px;
+    }
+
+    .home-info .btn-sci{
+        display: flex;
+        align-items: center;
+    }
+
+    .btn{
+        display: inline-block;
+        padding: 10px 30px;
+        background: orangered;
+        border-radius: 40px;
+        box-shadow: 0 0 10px orangered;
+        font-size: 16px;
+        color: #1f242d;
+        font-weight: 600;
+    }
+
+    .btn:hover{
+        background: transparent;
+        color: orangered;
+        box-shadow: none;
+    }
+
+    .home-info .btn-sci .sci{
+        margin-left: 20px;
+    }
+    
+    .home-info .btn-sci .sci a{
+        display: inline-flex;
+        padding: 8px;
+        border: 2px solid orangered;
+        border-radius: 50%;
+        font-size: 20px;
+        color: orangered;
+        margin: 0 8px;
+        transition: .5s;
+    }
+
+    .home-info .btn-sci .sci a:hover {
+        background: orangered;
+        color: #1f242d;
+        box-shadow: 0 0 10 orangered;
+    }
+
+    .img-box{
+        position: relative;
+        width: 32vw;
+        height: 32vw;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+   
+    .img-box::before,
+    .img-box::after{
+        content: '';
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background: conic-gradient(transparent, transparent, transparent, orangered);
+        transform: rotate(0deg);
+        animation: rotate-border 10s linear infinite;
+    }
+
+
+    @keyframes rotate-border {
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+
+    .img-box::after{
+        animation-delay: -5s;
+    }
+
+    .img-box .img-item{
+        padding: relative;
+        width: 100%;
+        height: 100%;
+        border: slateblue;
+        border-radius: 50%;
+        border: .1px solid white;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .img-box .img-item img{
+        position: relative;
+        top: 30px;
+        display: flex;
+        width: 85%;
+        object-fit: cover;
+        mix-blend-mode: lighten;
+    }
+
+</style>

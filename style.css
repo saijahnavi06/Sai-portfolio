@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:100,200,300,400,500,600,700');
+
+.logo{
+    font-size: 40px;
+    font-family: bold;
+    color: white;
+    animation: LogoAnimation 5s linear 1s infinite;
+}
+
+@keyframes LogoAnimation {
+    0%{
+        color: red;
+    }
+    25%{
+        color: yellow;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: green;
+    }
+    100%{
+        color: aqua;
+    }
+}
+
+
+h4{
+    color: green;
+    font-size: 20px;
+}
+
+.me{
+    font-size: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    
+}
+
+
+.designer{
+    opacity: 0.7;
+}
+
+.Top{
+    font-size: 22px;
+    background: white;
+    display: left;
+    background: transparent;
+    justify-content: right;
+    color: orangered;
+}
+ 
+html,body{
+    font-family: sans-serif;
+    color: orangered;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    position: relative;
+    height: 70px;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: white;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        background: orangered;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menulist{
+        transition: all 0.5s;
+    }
+}
+
+.container{
+    position: relative;
+}
+.right-btn{
+    position: absolute;
+    right: 0;
+}
+
+
+
+section{
+    border: 2px solid wheat;
+}
+
+
+
+
+
